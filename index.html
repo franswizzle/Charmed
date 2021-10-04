@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>charmed</title>
+  </head>
+
+  <body>
+    <header class="logo-load">
+      <img src="../img/charmed.png" />
+    </header>
+    <div class="loader"></div>
+    <!-- Phase 1 -->
+    <aside class="income-left__mobile">
+      <h3>
+        Yearly Income:
+        <form name="yearly-income-form" id="yearly-income-form" method="post">
+          <input
+            type="text"
+            name="yearly-income"
+            id="yearly-income"
+            pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
+            value=""
+            data-type="currency"
+            placeholder="$"
+          />
+
+          <input type="submit" value="Update" class="update-button" />
+        
+      </h3>
+      <h3 class="budget-left">Budget Left: </h3>
+    </aside>
+    <div class="section-header budget-header">
+      Budget
+    </div>
+    <section class="set-budget">
+        <ul class="budget-list">
+          <li class="add-new-budget">
+            <span>Add budget here</span>
+            <span class="add-budget">+</span>
+          </li>
+        </ul>
+      </form>
+    </section>
+    <div class="next-transaction">
+      Next
+      <div class="button-animation"></div>
+    </div>
+    <!-- End of phase 1 -->
+    <!-- Phase 2 -->
+    <div class="back-budgets">
+        <div class="button-animation-2"></div>
+        Budgets
+    </div>    
+    <div class="section-header transaction-header">
+      Transactions
+    </div>
+    <form class="transactions-form">
+    <section class="transactions">
+      
+        <ul class="transaction-list">
+          <li class="add-new-transaction">
+            <span>Add transaction here</span>
+            <span class="add-transaction">+</span>
+          </li>
+        </ul>
+      
+    </section>
+  </form>
+    <div class="next-graphs">
+        Graphs
+        <div class="button-animation-3"></div>
+    </div> 
+  
+  <!-- End Phase 2 -->
+  <!-- Phase 3 -->
+  <div class="back-transactions">
+    <div class="button-animation-4"></div>
+    Transactions
+</div>    
+<div class="section-header graphs-header">
+  Graphs
+</div>
+<section class="graphs">
+  
+    <ul class="graph-list">
+      
+    </ul>
+</section>
+<div class="back-budgets-2">
+  <div class="button-animation-4"></div>
+  Budgets
+</div> 
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

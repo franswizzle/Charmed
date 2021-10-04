@@ -1,0 +1,80 @@
+@import url("loader.css");
+@import url("setbudget.css");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+@import url("transaction.css");
+@import url("graphs.css");
+
+body {
+  font-family: "DotGothic16", sans-serif;
+  letter-spacing: 3px;
+  background-color: black;
+  background-image: linear-gradient(#41176e, #140722);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*needs to be changed after dom loads*/
+  align-items: center;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  visibility: visible;
+  opacity: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+header img {
+  width: 150px;
+  text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #089454;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #089454;
+}
+
+/*Scroll corner*/
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
+}
+
+.section-header {
+  color: #daa8f7;
+  font-weight: bold;
+  width: 80%;
+  text-align: right;
+  padding-bottom: 5px;
+  justify-content: flex-end;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+input {
+  font-family: "DotGothic16", sans-serif;
+  letter-spacing: 3px;
+}

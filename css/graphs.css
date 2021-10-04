@@ -1,0 +1,115 @@
+.graphs {
+  display: none;
+  height: 100%;
+  width: 80%;
+  min-width: 300px;
+  overflow-x: visible;
+  overflow-y: scroll;
+  padding: 10px 0px 5px 0px;
+  opacity: 0%;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.graphs-header,
+.back-transactions {
+  display: none;
+  visibility: hidden;
+  opacity: 0%;
+  transition: 0.5s ease-in-out;
+  min-width: 300px;
+}
+
+.back-transactions,
+.back-budgets-2 {
+  align-self: flex-start;
+  padding: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  visibility: hidden;
+  opacity: 0%;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.graphs-list {
+  display: grid;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  width: 90%;
+}
+
+.graph-list li {
+  width: 90%;
+}
+
+.button-animation-4 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px dotted #d97b0f;
+  border-left: 5px dotted #d97b0f;
+  transform: rotate(45deg);
+  opacity: 100%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.budget-container {
+  color: #daa8f7;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  min-width: 420px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px dotted #daa8f7;
+  padding-bottom: 30px;
+}
+
+.graph-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px 0px 30px 0px;
+}
+.budget-title {
+  padding: 30px;
+}
+
+.number-container {
+  align-self: flex-end;
+  margin-right: 50px;
+  padding-bottom: 10px;
+}
+
+.spent-number {
+  margin-right: 10px;
+  position: relative;
+  top: 25px;
+}
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  padding: 0px;
+  border-radius: 30px;
+  border: 2px solid #daa8f7;
+}
+
+.progress {
+  display: flex;
+  justify-content: flex-end;
+  width: 0%;
+  max-width: 100% !important;
+  height: 20px;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #089454;
+  position: relative;
+  margin: 0 0px;
+  border-right: 1px solid rgba(0, 0, 0, 0);
+  transition: 0.5s ease-in-out;
+}
